@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>{{ page.title }}|BenjyCui</title>
+	<link rel="stylesheet" href="../media/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../media/styles/index.css">
+</head>
+<body>
+	<header role="banner">
+		<section id="logo"><a href="index.html">
+			<strong>Benjy</strong>
+			<p>Cherish What You Have Got</p>
+		</a></section>
+
+		<nav role="navigation">
+			<ul class="clearfix">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://github.com/benjycui">GitHub</a></li>
+				<li><a href="">RSS</a></li>
+				<li><a href="">About Me</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<article role="main">
+		<header>
+			<h1>{{ page.title }}</h1>
+			<time>{{ page.date | date_to_string }}</time>
+		</header>
+		<section>
+			{{ content }}
+		</section>
+	</article>
+	
+	<footer>
+		&copy;Benjy Cui
+	</footer>
+	
+	<script scr="../media/scripts/jquery.js"></script>
+	<script src="../media/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../media/scripts/site.js"></script>
+</body>
+</html>

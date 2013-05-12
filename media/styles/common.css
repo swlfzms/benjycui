@@ -1,0 +1,6 @@
+/*!
+ * Preboot v2
+ *
+ * Open sourced under MIT license by @mdo.
+ * Some variables and mixins from Bootstrap (Apache 2 license).
+ */li{list-style:none}input{outline:0}html{background-color:#e6e6e6;font-size:62.5%}body{display:block;margin-left:auto;margin-right:auto;max-width:64rem;background-color:inherit}[role="banner"]{text-align:center}#logo a{-webkit-transition:color .2s;-moz-transition:color .2s;-o-transition:color .2s;transition:color .2s;display:block;color:#000;text-decoration:none}#logo a:hover{color:#808080}#logo strong{font-size:4.5rem;line-height:1.5}nav li{float:left;width:25%;text-align:center}nav a{-webkit-transition:color .2s;-moz-transition:color .2s;-o-transition:color .2s;transition:color .2s;color:#666;font-weight:700}nav a:hover{color:#b3b3b3;text-decoration:none}h1 a{color:#000;-webkit-transition:color .2s;-moz-transition:color .2s;-o-transition:color .2s;transition:color .2s}h1 a:hover{text-decoration:none;color:#808080}[role="main"]{margin-left:0}article p{text-indent:2em}article p:last-of-type{display:inline}

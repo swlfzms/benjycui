@@ -1,11 +1,17 @@
 ---
-layout: default
-title: 我的Blog
+layout: index
+title: BenjyCui
 ---
-<h2>{{ page.title }}</h2>
-<p>最新文章</p>
-<ul>
-　　{% for post in site._posts %}
-　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-　　{% endfor %}
-</ul>
+
+{% for post in site.posts %}
+	<li><article>
+		<header>
+			<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+			<time>{{ post.date | date_to_string }}</time>
+		</header>
+		<section>
+			{{ post.content }}
+			<a href="{{ site.baseurl }}{{ post.url }}">Detail >></a>
+		</section>
+	</article></li>
+{% endfor %}
