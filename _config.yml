@@ -1,1 +1,2 @@
-baseurl: /benjycui
+markdown: rdiscount
+pygments: true
