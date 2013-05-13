@@ -1,45 +1,12 @@
-<!doctype html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>{{ page.title }}|BenjyCui</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="media/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="media/bootstrap/css/bootstrap-responsive.css">
-	<link rel="stylesheet" href="media/styles/index.css">
-</head>
-<body>
-	<header role="banner">
-		<section id="logo"><a href="index.html">
-			<strong>Benjy</strong>
-			<p>Cherish What You Have Got</p>
-		</a></section>
-
-		<nav role="navigation">
-			<ul class="clearfix">
-				<li><a class="home" href="index.html">Home</a></li>
-				<li><a class="rss" href="">RSS</a></li>
-				<li><a class="info" href="">About Me</a></li>
-			</ul>
-		</nav>
+---
+layout: index
+---
+<article role="main">
+	<header>
+		<h1>{{ page.title }}</h1>
+		<time>{{ page.date | date_to_string }}</time>
 	</header>
-
-	<article role="main">
-		<header>
-			<h1>{{ page.title }}</h1>
-			<time>{{ page.date | date_to_string }}</time>
-		</header>
-		<section>
-			{{ content }}
-		</section>
-	</article>
-	
-	<footer>
-		&copy;Benjy Cui
-	</footer>
-	
-	<script scr="../media/scripts/jquery.js"></script>
-	<script src="../media/bootstrap/js/bootstrap.min.js"></script>
-	<script src="../media/scripts/site.js"></script>
-</body>
-</html>
+	<section>
+		{{ content }}
+	</section>
+</article>
