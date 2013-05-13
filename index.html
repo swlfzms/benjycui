@@ -13,7 +13,7 @@ title: Cherish What You Have Got
 			{{ post.content | strip_html | truncate: 140 }}
 		</section>
 		<footer class="clearfix">
-			<a class="more" href="article.html">Read Article >></a>
+			<a class="more" href="{{ site.baseurl }}{{ post.url }}">Read Article >></a>
 		</footer>
 	</article></li>
 {% endfor %}
