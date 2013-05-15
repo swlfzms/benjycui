@@ -10,7 +10,7 @@ title: Cherish What You Have Got
 			<time>{{ post.date | date_to_string }}</time>
 		</header>
 		<section>
-			{{ post.content | strip_html | truncatewords: 140 }}
+			{{ post.content | strip_html | truncate: 299 }}
 		</section>
 		<footer class="clearfix">
 			<a class="more" href="{{ site.baseurl }}{{ post.url }}">Read Article >></a>
