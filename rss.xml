@@ -6,8 +6,8 @@ layout: nil
 
   <channel>
     <title>BenjyCui</title>
-    <link>http://benjycui.github.io/benjycui/</link>
-    <atom:link href="http://benjycui.github.io/benjycui/rss.xml" rel="self" type="application/rss+xml" />
+    <link>{{ site.baseurl }}</link>
+    <atom:link href="{{ site.baseurl }}rss.xml" rel="self" type="application/rss+xml" />
     <description>Cherish What You Have Got</description>
     <language>zh</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
@@ -16,10 +16,10 @@ layout: nil
     {% for post in site.posts %}
       <item>
         <title>{{ post.title }}</title>
-        <link>http://benjycui.github.io/benjycui/{{ post.url }}</link>
+        <link>{{ site.baseurl }}{{ post.url }}</link>
         <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %Z" }}</pubDate>
         <author>Benjy CUi</author>
-        <guid>http://benjycui.github.io/benjycui/{{ post.url }}</guid>
+        <guid>{{ site.baseurl }}{{ post.url }}</guid>
         <description>{{ post.content | xml_escape }}</description>
       </item>
     {% endfor %}
