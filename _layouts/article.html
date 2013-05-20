@@ -13,12 +13,14 @@ layout: common
 </article>
 
 <aside id="related">
-  <h1>相关文章</h1>
-  <ul class="posts">
+  <dl>
+    <dt>相关文章</dt>
     {% for post in site.related_posts limit:3 %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    <dd>
+      <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a>
+    </dd>
     {% endfor %}
-  </ul>
+  </dl>
 </aside>
 
 <div id="disqus_thread"></div>
