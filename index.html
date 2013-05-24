@@ -4,17 +4,27 @@ title: Cherish What You Have Got
 ---
 <ul role="main">
 {% for post in site.posts %}
-	<li><article>
-		<header>
-			<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-			<time>{{ post.date | date_to_string }}</time>
-		</header>
-		<section>
-			{{ post.content | strip_html | truncate: 299 }}
-		</section>
-		<footer class="clearfix">
-			<a class="more" href="{{ site.baseurl }}{{ post.url }}">Read Article >></a>
-		</footer>
-	</article></li>
+	<li>
+		<div class="article">
+			<div class="header">
+				<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+				<time>{{ post.date | date_to_string }}</time>
+			</div>
+			<!-- class="header" -->
+
+			<div class="section">
+				{{ post.content | strip_html | truncate: 299 }}
+			</div>
+			<!-- class="section" -->
+
+			<div class="footer clearfix">
+				<a class="more" href="{{ site.baseurl }}{{ post.url }}">Read Article >></a>
+			</div>
+			<!-- class="footer" -->
+
+		</div>
+		<!-- class="article" -->
+		
+	</li>
 {% endfor %}
 </ul>
