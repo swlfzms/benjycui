@@ -7,7 +7,7 @@ title: 使用印象笔记提高工作效率的10个技巧
 
 英文原文：http://evernote.com/community/guides/JoshuaZerkel_Evernote_ProductivityTips.pdf
 
-——————————————————————————————————————————————————————————
+——————
 
 
 印象笔记的效率大使Joshua Zerkel分享了他自己使用印象笔记提高工作效率的10个技巧。Josh向我们展示了怎么用印象笔记去记录我们的想法和目标，如何把我们的想法和目标付诸行动，以及如何去跟踪我们的进度。
